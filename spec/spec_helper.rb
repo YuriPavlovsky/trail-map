@@ -1,4 +1,5 @@
 require 'webmock/rspec'
+require 'bourne'
 
 script_directory = File.dirname(__FILE__)
 helper_files = script_directory + '/../lib/helpers/*.rb'

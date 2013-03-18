@@ -6,6 +6,7 @@ class JSONValidator
 
   def run
     check_json_validation
+    check_json_schema
   end
 
   private
@@ -22,7 +23,7 @@ class JSONValidator
 
   def valid_json?
     begin
-      JSON.parse(@contents)
+      @parsed = JSON.parse(@contents)
       return true
     rescue Exception => e
       return false
@@ -36,5 +37,9 @@ class JSONValidator
   def print_error_message
     puts "\nERROR: #{@file_name} is not valid JSON. Learn more:"
     puts "cat #{@file_name} | pbcopy; open http://jsonlint.com"
+  end
+
+  def check_json_schema
+    JSONSchemaValidator.new(@parsed).validate
   end
 end
