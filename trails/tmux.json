@@ -6,7 +6,7 @@
   ],
   "steps": [
     {
-      "name": "Critical Learning",
+      "name": "Beginner tmux",
       "resources": [
         {
           "title": "Read tmux: Productive Mouse Free Development",
@@ -73,12 +73,7 @@
           "title": "Read the documentation",
           "uri": "http://www.openbsd.org/cgi-bin/man.cgi?query=tmux&sektion=1",
           "id": "f9743247fa313050816c5b68210f4aa0f315aedf"
-        }
-      ]
-    },
-    {
-      "name": "Use tmux for remote screen sharing",
-      "resources": [
+        },
         {
           "title": "Use wemux in mirror, pair, or rogue mode",
           "uri": "https://github.com/zolrath/wemux",
